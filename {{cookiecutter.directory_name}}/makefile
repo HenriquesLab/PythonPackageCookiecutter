@@ -33,7 +33,7 @@ format:
 	pre-commit run ruff-format --all-files
 
 pytest:
-	pytest --cov={{cokiecutter.package_name}} --cov-report=term-missing tests
+	pytest --cov={{cookiecutter.package_name}} --cov-report=term-missing tests
 
 mypy:
 	mypy --ignore-missing-imports src
