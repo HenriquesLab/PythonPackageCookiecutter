@@ -28,9 +28,9 @@ if __name__ == "__main__":
 
      cd {{ cookiecutter.directory_name }}
      
-    2. Use pip to install your package with testing dependencies:
+    2. Use pip to install your package with dev and testing dependencies:
      
-     pip install -e ".[test]"
+     pip install -e ".[dev,test]"
 
     3. Verify installation was successfull
 
