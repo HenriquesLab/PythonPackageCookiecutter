@@ -30,7 +30,7 @@ if __name__ == "__main__":
      
     2. Use pip to install your package with dev and testing dependencies:
      
-     pip install -e ".[dev,test]"
+     pip install -e ".[all]"
 
     3. Verify installation was successfull
 
