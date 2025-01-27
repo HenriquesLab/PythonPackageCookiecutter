@@ -1,4 +1,4 @@
-# PythonPackageCookiecutter#
+# PythonPackageCookiecutter
 
 Python Package template made using [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/)!
 
