@@ -1,11 +1,6 @@
 # PythonPackageCookiecutter# LiquidEngineCookiecutter
 
-Liquid Engine template made using [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/)!
-
-It helps create a python package and implements a simple class that subclasses the [Nanopyx Liquid Engine](https://github.com/HenriquesLab/NanoPyx).
-
-### A video tutorial is available!
-[![Video Tutorial](http://img.youtube.com/vi/s2SY6IlsWQI/0.jpg)](http://www.youtube.com/watch?v=s2SY6IlsWQI "How to Create a Python Package with the Liquid Engine")
+Python Package template made using [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/)!
 
 # How to use
 
@@ -20,7 +15,7 @@ pip install cookiecutter
 First, navigate to a folder where you want your package to live. 
 
 ```bash
-cookiecutter https://github.com/HenriquesLab/LiquidEngineCookieCutter
+cookiecutter https://github.com/HenriquesLab/PythonPackageCookiecutter
 ```
 
 Cookiecutter will ask you for information regarding the package you want to create. 
@@ -32,7 +27,7 @@ After this step is complete a new folder will appear in your working directory.
 First navigate to the newly created folder:
 
 ```bash
-cd MyLiquidEngineFolder
+cd MyPackageFolder
 pip install -e .
 ```
 
