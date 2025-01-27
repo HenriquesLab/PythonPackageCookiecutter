@@ -1,3 +1,44 @@
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{cookiecutter.package_name}}"
+version = "0.1.0"
+description = "{{cookiecutter.description}}"
+authors = [
+    { name = "{{cookiecutter.author_name}}", email = "{{cookiecutter.author_email}}" }
+]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { text = "{{cookiecutter.license}}" }
+classifiers = [
+    "Programming Language :: Python :: {{cookiecutter.minimum_python_version}}",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">= {{cookiecutter.minimum_python_version}}"
+dependencies = []
+
+[project.optional-dependencies]
+all = ["{{cookiecutter.package_name}}[dev, test]"]
+dev = [
+    "pre-commit>=3.7.0",
+    "ipykernel>=6.29.4",
+    "ruff>=0.4.3",
+    "gptrepo>=1.0.3",
+    "pdoc>=12.3.1",
+    "build"
+]
+test = [
+    "pytest>=8.2.0",
+    "pytest-xdist>=3.6.1",
+    "pytest-cov>=5.0.0",
+    "nbmake>=1.5.3",
+    "mypy>=1.10.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml"]
