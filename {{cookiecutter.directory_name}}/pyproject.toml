@@ -28,6 +28,7 @@ dev = [
     "gptrepo>=1.0.3",
     "pdoc>=12.3.1",
     "build"
+    "gptrepo"
 ]
 test = [
     "pytest>=8.2.0",
