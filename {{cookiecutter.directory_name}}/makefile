@@ -21,10 +21,10 @@ install-editable:
 	pip install --editable .
 
 install-all:
-	pip install ".[dev, test]"
+	pip install ".[all]"
 
 install-editable-all:
-	pip install --editable ".[dev, test]"
+	pip install --editable ".[all]"
 
 lint:
 	pre-commit run ruff --all-files
