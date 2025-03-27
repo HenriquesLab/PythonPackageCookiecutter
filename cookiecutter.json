@@ -5,7 +5,7 @@
     "file_name":"my_package",
     "package_name":"mypackage",
     "class_name":"MyClass",
-    "description":"My python package package",
+    "description":"My python package",
     "minimum_python_version": "3.9",
     "license": [
         "BSD-3",
