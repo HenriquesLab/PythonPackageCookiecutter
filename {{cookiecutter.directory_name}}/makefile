@@ -9,8 +9,6 @@ help:
 	@echo "  lint                       Run linters using pre-commit"
 	@echo "  format                     Run formatters using pre-commit"
 	@echo "  pytest                     Run tests using pytest"
-	@echo "  mypy                       Run type-checking using mypy"
-	@echo "  mypy-types                 Install missing types using mypy"
 	@echo "  docs                       Generate documentation using pdoc"
 	@echo "  package                    Builds python package"
 
@@ -34,12 +32,6 @@ format:
 
 pytest:
 	pytest --cov={{cookiecutter.package_name}} --cov-report=term-missing tests
-
-mypy:
-	mypy --ignore-missing-imports src
-
-mypy-types:
-	mypy --install-types
 
 docs:
 	rm -rf docs
